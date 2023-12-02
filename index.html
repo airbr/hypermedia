@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Hypermedia System</title>
+  <title>Hypermedia system</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -23,8 +23,23 @@
 <body>
   <div style="display: flex; flex-direction:column; justify-content: center; align-items: center; min-height: 100vh;">
 
-    <p>Hello world! This is HTML5 Boilerplate.</p>
+     
+    <a href="https://morganwebdev.com"><p>It is me.</p></a>
 
+    <p>Building a hyper media system. Feel free to drop me line. Your URL will be well received.</p>
+
+    <form name="contact" method="POST" data-netlify="true">
+      <p class="center">
+        <label for="inputurl">Enter an https:// URL:</label>
+        <input id="inputurl" type="url" name="url" id="url" placeholder="https://example.com" pattern="https://.*" size="30" required />
+      </p>
+      <p class="center">
+        <label>Description or notes: <textarea name="message"></textarea></label>
+      </p>
+      <p class="center">
+        <button type="submit">Send</button>
+      </p>
+    </form>
   </div>
   <script src="js/htmx.min.js"></script>
 </body>
