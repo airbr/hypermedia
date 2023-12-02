@@ -16,6 +16,7 @@
   <link rel="apple-touch-icon" href="icon.png">
 
   <link rel="stylesheet" href="css/missing.min.css">
+  <script src="js/htmx.min.js" async></script>
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -34,7 +35,7 @@
       Having a lot of fun reading <a href="https://hypermedia.systems/book/contents/">this book</a> 
     </details>
 
-    <form name="contact" method="POST" data-netlify="true">
+    <form name="contact" action="/success"method="POST" data-netlify="true">
       <p class="center">
         <label for="inputurl">Enter an https:// URL you think is excellent:</label>
         <input id="inputurl" type="url" name="url" id="url" placeholder="https://example.com" pattern="https://.*" size="30" required />
@@ -48,11 +49,10 @@
     </form>
 
     <div hx-boost="true">
-      <a href="/boosted.html">Example 1 in progress</a>
-      <a href="/index.html">Send me a URL form</a>
+      <li><a href="/boosted.html">Example 1 in progress</a></li>
+      <li><a href="/index.html">Send me a URL form</a></li>
    </div>
   </div>
-  <script src="js/htmx.min.js"></script>
 </body>
 
 </html>
