@@ -22,14 +22,17 @@
     <div hx-ext="preload" hx-boost="true" class="center box ok" style="min-height: 100vh;">
         <a href="/boosted-further.html" preload="mousedown" preload-images="true" class="center" >
             <img height="400" width="400" style="max-width: 400px; min-height: 400px;" src="img/construction.png" />
+            <p style="text-align: center;">Click the construction logo to progressively trim the size of the html received in the next step.</p>
+
             <label for="file">Trimming HTML progress:</label>
             <progress id="file" max="100" value="33">1/3</progress>    
         </a>
-        <h1>This is... under construction. 39 lines of HTML. <br>
+        <div class="center" style="text-align: center;">
+        <h1>This is under construction. 41 lines of HTML. <br>
             Let's see how far it can go with hx-boost before we start losing features.</h1>
-        <h1>Click the construction logo to progressively<br> trim the size of the html received in the next step.</h1>
         <h2>This response includes the full head tag, in case boost<br>does not work but with different body content</h2>
-     <nav hx-boost="true">
+        </div>
+        <nav hx-boost="true">
         <p>MENU</p>
         <a href="/index.html">Home.</a>
     </nav>
