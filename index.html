@@ -17,6 +17,8 @@
 
   <link rel="stylesheet" href="css/missing.min.css">
   <script src="js/htmx.min.js" async></script>
+  <script src="js/preload.js"></script>
+
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -53,8 +55,10 @@
     <br>
     
     <nav hx-boost="true">
-        <p>MENU</p>
-        <a href="/boosted.html">Example 1 in progress.</a>
+      <p>MENU</p>
+        <div hx-ext="preload">
+          <a href="/boosted.html" preload="mouseover" preload-images="true">Example 1 in progress.</a>
+        </div>
         <hr>
         <a href="https://morganwebdev.com"><p>My website.</p></a>
         <a rel="me" href="https://subdued.social/@morganm">socials.</a>
