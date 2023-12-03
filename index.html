@@ -19,11 +19,10 @@
   <script src="js/htmx.min.js" async></script>
 
   <meta name="theme-color" content="#fafafa">
-  <a rel="me" href="https://subdued.social/@morganm">Mastodon</a>
 </head>
 
 <body>
-  <div style="margin: 15px; display: flex; flex-direction:column; justify-content: center; align-items: center; min-height: 100vh;">
+  <main style="display: flex; flex-direction:column; justify-content: center; align-items: center; min-height: 100vh;">
 
     <h1>I am building something with Hypermedia</h1>
     <h2>I'd love your input! this is just for fun</h2>
@@ -50,15 +49,19 @@
       </p>
     </form>
 
-    <a href="https://morganwebdev.com"><p>About me: My name is Morgan.</p></a>
 
     <br>
+    
+    <nav hx-boost="true">
+        <p>MENU</p>
+        <a href="/boosted.html">Example 1 in progress.</a>
 
-    <div hx-boost="true">
-      <p>MENU</p>
-      <li><a href="/boosted.html">Example 1 in progress</a></li>
-   </div>
-  </div>
+        <hr>
+        <a href="https://morganwebdev.com"><p>My website.</p></a>
+        <a rel="me" href="https://subdued.social/@morganm">socials.</a>
+    </nav>
+
+  </main>
 </body>
 
 </html>
