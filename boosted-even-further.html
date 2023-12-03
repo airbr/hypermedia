@@ -1,7 +1,9 @@
 <body>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <div class="box bad center" style="margin: 15px; text-align: center; display: flex; flex-direction:column; justify-content: center; align-items: center; min-height: 100vh;">
-  <img id="demo" height="400" width="400" style="max-width: 400px; min-height: 400px;" src="img/construction.png" />
+  <div hx-get="/the-end.html" hx-swap="innerHtml">
+    <img onclick="this.remove()" id="demo" height="400" width="400" style="max-width: 400px; min-height: 400px;" src="img/construction.png" />
+  </div>
   <label for="file">Trimming HTML progress:</label>
   <progress id="file" max="100" value="100">3/3</progress>
   <h1>Success... or failure!</h1>
