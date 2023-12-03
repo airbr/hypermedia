@@ -1,10 +1,10 @@
 {
-  "name": " ",
-  "version": "0.0.1",
-  "description": "",
-  "keywords": "",
+  "name": "A hypermedia system",
+  "version": "1989",
+  "description": "a hypermedia system",
+  "keywords": "HTML CSS SVG",
   "license": "",
-  "author": "",
+  "author": "Morgan Murrah morgan@morganwebdev.com",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
