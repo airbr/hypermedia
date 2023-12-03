@@ -26,7 +26,7 @@
   <main style="display: flex; flex-direction:column; justify-content: center; align-items: center; min-height: 100vh;">
 
     <h1>I am building something with Hypermedia</h1>
-    <h2>I'd love your input! this is just for fun</h2>
+    <h2>just for fun</h2>
 
     <details id="details">
       <summary> A little about why...</summary>
@@ -42,11 +42,11 @@
       <summary>If you want to contribute to this project:</summary>
     <form name="contact" class="box ok" method="POST" data-netlify="true">
       <p class="center">
-        <label for="inputurl">If you like, <strong>enter an https:// URL</strong> you think is interesting or insightful and send it to me with this handy form, thanks!</label>
-        <input style="width: 300px;" id="inputurl" type="url" name="url" id="url" placeholder="https://example.com" pattern="https://.*" size="150" required />
+        <label for="inputurl">(optional) If you like, <strong>enter an https:// URL</strong> you think is interesting or insightful and send it to me with this handy form, thanks!</label>
+        <input style="width: 300px;" id="inputurl" type="url" name="url" id="url" placeholder="https://example.com" pattern="https://.*" size="150" />
       </p>
       <p class="center">
-        <label>Description or notes (optional): <textarea name="message"></textarea></label>
+        <label>Description or notes (required): <textarea required name="message"></textarea></label>
       </p>
       <p class="center">
         <button type="submit">Send</button>
